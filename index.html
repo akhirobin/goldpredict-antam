@@ -9,52 +9,85 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div>
-      <h1>GoldPredict ANTAM</h1>
-      <p>Hybrid realtime gold prediction & decision support</p>
-    </div>
-    <div style="display:flex;gap:10px;align-items:center">
-      <a href="admin.html" style="color:#fff;text-decoration:none;border:1px solid #64748b;padding:8px 12px;border-radius:999px">Admin</a>
-      <div id="status" class="badge">Memuat...</div>
-    </div>
-  </header>
+<header class="topbar">
+  <div>
+    <h1>GoldPredict ANTAM</h1>
+    <p>Harga resmi ANTAM hari ini + prediksi harga besok</p>
+  </div>
+  <div class="top-actions">
+    <a href="admin.html" class="admin-link">Admin</a>
+    <div id="status" class="badge">Memuat...</div>
+  </div>
+</header>
 
-  <main class="container">
-    <section class="grid">
-      <article class="card"><span>XAU/USD</span><strong id="xau">-</strong><small id="xauChange">-</small></article>
-      <article class="card"><span>USD/IDR</span><strong id="fx">-</strong><small id="fxChange">-</small></article>
-      <article class="card"><span>ANTAM 1 gram</span><strong id="antam">-</strong><small>Harga referensi resmi</small></article>
-      <article class="card"><span>Buyback</span><strong id="buyback">-</strong><small id="spread">-</small></article>
-    </section>
+<main class="container">
+  <section class="today-predict">
+    <article class="card focus today-card">
+      <div class="eyebrow">HARGA ANTAM RESMI HARI INI</div>
+      <div class="source-line"><span id="officialDate">-</span> · <a href="https://www.logammulia.com/id/harga-emas-hari-ini" target="_blank" rel="noopener">Sumber Logam Mulia</a></div>
+      <div class="big-price" id="antam">-</div>
+      <div class="unit">Emas Batangan 1 gram</div>
+      <div id="freshness" class="freshness">Memeriksa data resmi...</div>
+    </article>
 
-    <section class="prediction card hero">
+    <article class="card focus forecast-card">
+      <div class="eyebrow">PREDIKSI ANTAM BESOK</div>
+      <div class="forecast-row">
+        <div>
+          <div class="big-price" id="predicted">-</div>
+          <div id="range" class="unit">Range: -</div>
+        </div>
+        <div class="forecast-signal">
+          <strong id="direction">-</strong>
+          <span id="confidence">Confidence: -</span>
+        </div>
+      </div>
+      <div class="metric-row">
+        <span>Backtest arah</span><strong id="backtestAcc">-</strong>
+        <span>MAPE</span><strong id="mape">-</strong>
+      </div>
+      <p id="modelNote" class="muted">Menunggu hasil model.</p>
+    </article>
+  </section>
+
+  <section class="grid market-grid">
+    <article class="card"><span>Harga ANTAM 1g</span><strong id="antamMini">-</strong><small id="antamDateMini">-</small></article>
+    <article class="card"><span>Prediksi besok</span><strong id="predMini">-</strong><small id="predChange">-</small></article>
+    <article class="card"><span>Arah</span><strong id="dirMini">-</strong><small id="confMini">-</small></article>
+    <article class="card"><span>Status Model</span><strong id="modelStatus">-</strong><small id="lastUpdate">-</small></article>
+  </section>
+
+  <section class="card">
+    <div class="section-head">
       <div>
-        <span>Prediksi ANTAM berikutnya</span>
-        <h2 id="predicted">-</h2>
-        <p id="range">Range: -</p>
+        <h2>Harga Emas Batangan ANTAM</h2>
+        <p>Semua pecahan dari feed Logam Mulia terbaru.</p>
       </div>
-      <div class="signal">
-        <strong id="direction">-</strong>
-        <span id="confidence">Confidence: -</span>
-      </div>
-    </section>
+      <button id="refreshBtn" class="refresh-btn">Perbarui</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Pecahan</th><th>Harga</th><th>Harga/gram</th><th>Tanggal Resmi</th></tr></thead>
+        <tbody id="productBody"><tr><td colspan="4">Memuat...</td></tr></tbody>
+      </table>
+    </div>
+  </section>
 
-    <section class="grid two">
-      <article class="card">
-        <h3>Market Signal</h3>
-        <div id="tradeSignal" class="signal-pill">-</div>
-        <p id="signalReason">Menunggu data.</p>
-      </article>
-      <article class="card">
-        <h3>Status data</h3>
-        <p>Update terakhir: <strong id="updated">-</strong></p>
-        <p>Mode: <strong id="mode">-</strong></p>
-        <p class="muted">Sinyal adalah decision-support, bukan jaminan keuntungan.</p>
-      </article>
-    </section>
-  </main>
+  <section class="grid two">
+    <article class="card">
+      <h3>Metode Prediksi</h3>
+      <p><strong id="modelName">-</strong></p>
+      <p class="muted">Ensemble model dilatih dari histori ANTAM, kemudian disesuaikan dengan momentum emas dunia dan USD/IDR. Akurasi ditampilkan dari data uji yang tidak dipakai melatih model.</p>
+    </article>
+    <article class="card">
+      <h3>Status Data</h3>
+      <p>Sinkronisasi aplikasi: <strong id="updated">-</strong></p>
+      <p>Mode: <strong id="mode">-</strong></p>
+      <p class="muted">Prediksi adalah alat bantu keputusan dan bukan jaminan harga atau keuntungan.</p>
+    </article>
+  </section>
+</main>
 
-  <script src="assets/js/app.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
