@@ -1,0 +1,26 @@
+[
+  {
+    "updated_at":"2026-10-05T08:30:00+07:00",
+    "xau_usd":4148.20,
+    "usd_idr":17855,
+    "antam_sell_1g":2574000,
+    "antam_buyback":2380000,
+    "predicted_antam_1g":2586000,
+    "direction":"NAIK",
+    "confidence_pct":64,
+    "trade_signal":"WAIT",
+    "signal_reason":"Data awal contoh untuk tampilan histori."
+  },
+  {
+    "updated_at":"2026-10-05T19:30:00+07:00",
+    "xau_usd":4160.00,
+    "usd_idr":17900,
+    "antam_sell_1g":2580000,
+    "antam_buyback":2386000,
+    "predicted_antam_1g":2590000,
+    "direction":"DEMO",
+    "confidence_pct":0,
+    "trade_signal":"WAIT",
+    "signal_reason":"Data awal contoh. Hubungkan API realtime dan data ANTAM sebelum menggunakan sinyal."
+  }
+]
