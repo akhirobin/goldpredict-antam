@@ -33,6 +33,8 @@ function render(d){
   setText('backtestAcc',d.backtest_direction_accuracy==null?'Belum cukup data':Number(d.backtest_direction_accuracy).toFixed(1)+'%');
   setText('mape',d.backtest_mape==null?'Belum cukup data':Number(d.backtest_mape).toFixed(3)+'%');
   setText('modelName',d.model||'-');
+  setText('brankasMini',d.brankas_sell_1g?fmtIDR(d.brankas_sell_1g):'Belum tersedia');
+  setText('brankasDateMini',d.brankas_recorded_date?('Update '+d.brankas_recorded_date):'Sumber BRANKAS belum sinkron');
   setText('modelStatus',d.confidence_pct>0?'TERVALIDASI':'MENUNGGU DATA');
   setText('modelNote',d.model_note||'');
   setText('lastUpdate',d.updated_at?new Date(d.updated_at).toLocaleString('id-ID'):'-');
