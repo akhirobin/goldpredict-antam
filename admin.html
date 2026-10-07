@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Admin - GoldPredict ANTAM</title>
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <div id="loginView" class="auth-wrap">
+    <div class="auth-card">
+      <h1>Admin GoldPredict</h1>
+      <p>Masuk untuk melihat histori harga, hasil prediksi, dan impor/ekspor data.</p>
+      <form id="loginForm">
+        <label>Username</label>
+        <input id="username" autocomplete="username" required>
+        <label>Password</label>
+        <input id="password" type="password" autocomplete="current-password" required>
+        <button type="submit">Login</button>
+        <p id="loginError" class="error"></p>
+      </form>
+      <small>Versi GitHub Pages menggunakan login sisi browser untuk prototipe. Untuk keamanan produksi, sambungkan autentikasi server/Supabase.</small>
+    </div>
+  </div>
+
+  <div id="adminView" class="hidden">
+    <header class="topbar">
+      <div>
+        <h1>Backend GoldPredict ANTAM</h1>
+        <p>Monitoring update harga & prediksi</p>
+      </div>
+      <div class="actions">
+        <a class="btn secondary" href="index.html">Dashboard Publik</a>
+        <button id="logoutBtn" class="btn danger">Logout</button>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="stats">
+        <article class="card"><span>Total Record</span><strong id="totalRecords">0</strong></article>
+        <article class="card"><span>Update Terakhir</span><strong id="lastUpdate">-</strong></article>
+        <article class="card"><span>Akurasi Arah</span><strong id="directionAccuracy">-</strong></article>
+        <article class="card"><span>Rata-rata Confidence</span><strong id="avgConfidence">-</strong></article>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <div>
+            <h2>Progress Harga & Prediksi</h2>
+            <p>Riwayat setiap update data yang tersimpan.</p>
+          </div>
+          <div class="actions">
+            <button id="importBtn" class="btn">Import Excel</button>
+            <button id="exportBtn" class="btn success">Export Excel</button>
+            <input id="fileInput" type="file" accept=".xlsx,.xls,.csv" hidden>
+          </div>
+        </div>
+        <div id="chartWrap" class="chart-wrap"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>Riwayat Update</h2>
+          <input id="searchInput" class="search" placeholder="Cari tanggal / sinyal / arah...">
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Waktu</th>
+                <th>XAU/USD</th>
+                <th>USD/IDR</th>
+                <th>ANTAM</th>
+                <th>Buyback</th>
+                <th>Prediksi</th>
+                <th>Arah</th>
+                <th>Confidence</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody id="historyBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
