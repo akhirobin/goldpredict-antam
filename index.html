@@ -73,11 +73,82 @@
     </div>
   </section>
 
+  <section class="tradingview-grid">
+    <article class="card tv-card">
+      <div class="section-head">
+        <div>
+          <h2>Emas Dunia — TradingView</h2>
+          <p>Chart realtime XAU/USD untuk memantau arah pasar internasional.</p>
+        </div>
+        <span class="tv-badge">TradingView • OANDA:XAUUSD</span>
+      </div>
+      <div class="tv-chart">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+          <div class="tradingview-widget-copyright">
+            <a href="https://www.tradingview.com/symbols/XAUUSD/" rel="noopener nofollow" target="_blank"><span class="blue-text">XAU/USD chart</span></a>
+            <span class="trademark"> by TradingView</span>
+          </div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {
+            "autosize": true,
+            "symbol": "OANDA:XAUUSD",
+            "interval": "60",
+            "timezone": "Asia/Jakarta",
+            "theme": "light",
+            "style": "1",
+            "locale": "id_ID",
+            "backgroundColor": "#ffffff",
+            "gridColor": "rgba(46, 46, 46, 0.06)",
+            "allow_symbol_change": false,
+            "hide_side_toolbar": false,
+            "withdateranges": true,
+            "save_image": false,
+            "studies": [
+              "RSI@tv-basicstudies",
+              "MACD@tv-basicstudies",
+              "MASimple@tv-basicstudies"
+            ],
+            "support_host": "https://www.tradingview.com"
+          }
+          </script>
+        </div>
+      </div>
+    </article>
+
+    <article class="card tv-card">
+      <div class="section-head">
+        <div>
+          <h2>Technical Analysis TradingView</h2>
+          <p>Ringkasan sinyal teknikal XAU/USD sebagai konfirmasi tambahan.</p>
+        </div>
+      </div>
+      <div class="tv-tech">
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:100%;width:100%"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+          {
+            "interval": "1h",
+            "width": "100%",
+            "isTransparent": true,
+            "height": "100%",
+            "symbol": "OANDA:XAUUSD",
+            "showIntervalTabs": true,
+            "displayMode": "single",
+            "locale": "id_ID",
+            "colorTheme": "light"
+          }
+          </script>
+        </div>
+      </div>
+    </article>
+  </section>
+
   <section class="grid two">
     <article class="card">
       <h3>Metode Prediksi</h3>
       <p><strong id="modelName">-</strong></p>
-      <p class="muted">Ensemble model dilatih dari histori ANTAM, kemudian disesuaikan dengan momentum emas dunia dan USD/IDR. Akurasi ditampilkan dari data uji yang tidak dipakai melatih model.</p>
+      <p class="muted">Ensemble model dilatih dari histori ANTAM, momentum emas dunia, dan USD/IDR. Chart serta Technical Analysis TradingView XAU/USD digunakan sebagai konfirmasi pasar yang terlihat langsung pada dashboard. Akurasi ditampilkan dari data uji yang tidak dipakai melatih model.</p>
     </article>
     <article class="card">
       <h3>Status Data</h3>
