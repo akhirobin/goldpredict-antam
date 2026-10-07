@@ -159,7 +159,7 @@ def forecast(prices, gold, fx, current_price):
         "backtest_mape":round(mape,3),
         "backtest_mae":round(mae),
         "model":"Ensemble ExtraTrees + RandomForest + GradientBoosting",
-        "model_note":"Prediksi besok dihitung dari histori ANTAM 1g dan disesuaikan momentum emas dunia serta USD/IDR. Akurasi adalah hasil walk-forward holdout terbaru, bukan jaminan."
+        "model_note":"Prediksi besok dihitung dari histori ANTAM 1g dan feed emas dunia serta USD/IDR yang dapat diakses server. TradingView OANDA:XAUUSD ditampilkan sebagai validasi visual dan technical confirmation karena TradingView tidak menyediakan public data API untuk model. Akurasi adalah hasil holdout terbaru, bukan jaminan."
     }
 
 def main():
@@ -195,6 +195,8 @@ def main():
         "official_recorded_date":recorded,
         "source_name":"Logam Mulia (via public bridge)",
         "source_url":"https://www.logammulia.com/id/harga-emas-hari-ini",
+        "tradingview_symbol":"OANDA:XAUUSD",
+        "tradingview_role":"visual_confirmation",
         "antam_sell_1g":int(current),
         "products":products,
         **pred
