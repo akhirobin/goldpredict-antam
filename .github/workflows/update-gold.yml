@@ -1,0 +1,41 @@
+name: Update ANTAM & Prediction
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "45 1 * * 1-6"
+    - cron: "30 3 * * 1-6"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/update_gold.py"
+      - ".github/workflows/update-gold.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gold-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install prediction dependencies
+        run: pip install requests pandas numpy scikit-learn
+      - name: Fetch official ANTAM bridge data and build forecast
+        run: python scripts/update_gold.py
+      - name: Commit refreshed data
+        run: |
+          git config user.name "GoldPredict Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/latest.json data/history.json
+          git diff --cached --quiet || git commit -m "Auto update ANTAM price and next-day forecast"
+          git push
