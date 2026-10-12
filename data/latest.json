@@ -1,16 +1,109 @@
 {
-  "updated_at":"2026-10-05T19:30:00+07:00",
-  "xau_usd":4160.00,
-  "xau_change_pct":0.00,
-  "usd_idr":17900,
-  "usd_idr_change_pct":0.00,
-  "antam_sell_1g":2580000,
-  "antam_buyback":2386000,
-  "predicted_antam_1g":2590000,
-  "prediction_low":2575000,
-  "prediction_high":2605000,
-  "direction":"DEMO",
-  "confidence_pct":0,
-  "trade_signal":"WAIT",
-  "signal_reason":"Data awal contoh. Hubungkan API realtime dan data ANTAM sebelum menggunakan sinyal."
+  "updated_at": "2026-10-12T15:04:53+07:00",
+  "official_recorded_date": "2026-10-12",
+  "source_name": "Logam Mulia (via public bridge)",
+  "source_url": "https://www.logammulia.com/id/harga-emas-hari-ini",
+  "tradingview_symbol": "OANDA:XAUUSD",
+  "tradingview_role": "visual_confirmation",
+  "antam_sell_1g": 2594000,
+  "brankas_sell_1g": 2594000,
+  "brankas_material_type": "Emas Fisik",
+  "brankas_recorded_date": "2026-10-12",
+  "brankas_source_url": "https://brankaslm.com/",
+  "products": [
+    {
+      "weight": 0.5,
+      "weightUnit": "gr",
+      "sellPrice": 1347000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 1,
+      "weightUnit": "gr",
+      "sellPrice": 2594000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 2,
+      "weightUnit": "gr",
+      "sellPrice": 5128000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 3,
+      "weightUnit": "gr",
+      "sellPrice": 7667000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 5,
+      "weightUnit": "gr",
+      "sellPrice": 12745000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 10,
+      "weightUnit": "gr",
+      "sellPrice": 25435000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 25,
+      "weightUnit": "gr",
+      "sellPrice": 63462000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 50,
+      "weightUnit": "gr",
+      "sellPrice": 126845000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 100,
+      "weightUnit": "gr",
+      "sellPrice": 253612000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 250,
+      "weightUnit": "gr",
+      "sellPrice": 633765000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 500,
+      "weightUnit": "gr",
+      "sellPrice": 1267320000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    },
+    {
+      "weight": 1000,
+      "weightUnit": "gr",
+      "sellPrice": 2534600000,
+      "recordedDate": "2026-10-12",
+      "materialType": "Emas Batangan"
+    }
+  ],
+  "predicted_antam_1g": 2593000,
+  "prediction_low": 2566000,
+  "prediction_high": 2620000,
+  "direction": "SIDEWAYS",
+  "confidence_pct": 50.0,
+  "backtest_direction_accuracy": 50.0,
+  "backtest_mape": 0.805,
+  "backtest_mae": 20862,
+  "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature",
+  "model_note": "Prediksi besok dihitung dari histori ANTAM 1g, harga BRANKAS ANTAM, emas dunia, dan USD/IDR. TradingView OANDA:XAUUSD ditampilkan sebagai konfirmasi visual/teknikal. Akurasi adalah hasil holdout terbaru, bukan jaminan."
 }
