@@ -1,109 +1,109 @@
 {
-  "updated_at": "2026-10-12T18:13:14+07:00",
-  "official_recorded_date": "2026-10-12",
+  "updated_at": "2026-10-13T15:31:36+07:00",
+  "official_recorded_date": "2026-10-13",
   "source_name": "Logam Mulia (via public bridge)",
   "source_url": "https://www.logammulia.com/id/harga-emas-hari-ini",
   "tradingview_symbol": "OANDA:XAUUSD",
   "tradingview_role": "visual_confirmation",
-  "antam_sell_1g": 2594000,
-  "brankas_sell_1g": 2594000,
+  "antam_sell_1g": 2574000,
+  "brankas_sell_1g": 2574000,
   "brankas_material_type": "Emas Fisik",
-  "brankas_recorded_date": "2026-10-12",
+  "brankas_recorded_date": "2026-10-13",
   "brankas_source_url": "https://brankaslm.com/",
   "products": [
     {
       "weight": 0.5,
       "weightUnit": "gr",
-      "sellPrice": 1347000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 1337000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 1,
       "weightUnit": "gr",
-      "sellPrice": 2594000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 2574000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 2,
       "weightUnit": "gr",
-      "sellPrice": 5128000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 5088000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 3,
       "weightUnit": "gr",
-      "sellPrice": 7667000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 7607000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 5,
       "weightUnit": "gr",
-      "sellPrice": 12745000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 12645000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 10,
       "weightUnit": "gr",
-      "sellPrice": 25435000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 25235000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 25,
       "weightUnit": "gr",
-      "sellPrice": 63462000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 62962000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 50,
       "weightUnit": "gr",
-      "sellPrice": 126845000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 125845000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 100,
       "weightUnit": "gr",
-      "sellPrice": 253612000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 251612000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 250,
       "weightUnit": "gr",
-      "sellPrice": 633765000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 628765000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 500,
       "weightUnit": "gr",
-      "sellPrice": 1267320000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 1257320000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     },
     {
       "weight": 1000,
       "weightUnit": "gr",
-      "sellPrice": 2534600000,
-      "recordedDate": "2026-10-12",
+      "sellPrice": 2514600000,
+      "recordedDate": "2026-10-13",
       "materialType": "Emas Batangan"
     }
   ],
-  "predicted_antam_1g": 2590000,
-  "prediction_low": 2563000,
-  "prediction_high": 2617000,
-  "direction": "SIDEWAYS",
+  "predicted_antam_1g": 2584000,
+  "prediction_low": 2556000,
+  "prediction_high": 2612000,
+  "direction": "NAIK",
   "confidence_pct": 50.0,
-  "backtest_direction_accuracy": 50.0,
-  "backtest_mape": 0.805,
-  "backtest_mae": 20862,
+  "backtest_direction_accuracy": 46.2,
+  "backtest_mape": 0.835,
+  "backtest_mae": 21629,
   "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature",
   "model_note": "Prediksi besok dihitung dari histori ANTAM 1g, harga BRANKAS ANTAM, emas dunia, dan USD/IDR. TradingView OANDA:XAUUSD ditampilkan sebagai konfirmasi visual/teknikal. Akurasi adalah hasil holdout terbaru, bukan jaminan."
 }
