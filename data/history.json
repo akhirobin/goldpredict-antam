@@ -58,5 +58,17 @@
     "direction": "SIDEWAYS",
     "confidence_pct": 50.0,
     "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature"
+  },
+  {
+    "updated_at": "2026-10-15T13:30:51+07:00",
+    "official_recorded_date": "2026-10-15",
+    "antam_sell_1g": 2561000,
+    "brankas_sell_1g": 2561000,
+    "predicted_antam_1g": 2578000,
+    "prediction_low": 2547000,
+    "prediction_high": 2609000,
+    "direction": "NAIK",
+    "confidence_pct": 50.0,
+    "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature"
   }
 ]
