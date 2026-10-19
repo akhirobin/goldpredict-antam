@@ -96,14 +96,14 @@
     "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature"
   },
   {
-    "updated_at": "2026-10-19T13:56:11+07:00",
+    "updated_at": "2026-10-19T16:12:17+07:00",
     "official_recorded_date": "2026-10-19",
     "antam_sell_1g": 2574000,
-    "brankas_sell_1g": null,
-    "predicted_antam_1g": 2582000,
-    "prediction_low": 2546000,
-    "prediction_high": 2618000,
-    "direction": "NAIK",
+    "brankas_sell_1g": 2574000,
+    "predicted_antam_1g": 2578000,
+    "prediction_low": 2542000,
+    "prediction_high": 2614000,
+    "direction": "SIDEWAYS",
     "confidence_pct": 50.0,
     "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature"
   }

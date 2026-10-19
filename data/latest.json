@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-10-19T13:56:11+07:00",
+  "updated_at": "2026-10-19T16:12:17+07:00",
   "official_recorded_date": "2026-10-19",
   "source_name": "Logam Mulia (via public bridge)",
   "source_url": "https://www.logammulia.com/id/harga-emas-hari-ini",
   "tradingview_symbol": "OANDA:XAUUSD",
   "tradingview_role": "visual_confirmation",
   "antam_sell_1g": 2574000,
-  "brankas_sell_1g": null,
-  "brankas_material_type": null,
-  "brankas_recorded_date": null,
+  "brankas_sell_1g": 2574000,
+  "brankas_material_type": "Emas Fisik",
+  "brankas_recorded_date": "2026-10-19",
   "brankas_source_url": "https://brankaslm.com/",
   "products": [
     {
@@ -96,10 +96,10 @@
       "materialType": "Emas Batangan"
     }
   ],
-  "predicted_antam_1g": 2582000,
-  "prediction_low": 2546000,
-  "prediction_high": 2618000,
-  "direction": "NAIK",
+  "predicted_antam_1g": 2578000,
+  "prediction_low": 2542000,
+  "prediction_high": 2614000,
+  "direction": "SIDEWAYS",
   "confidence_pct": 50.0,
   "backtest_direction_accuracy": 48.1,
   "backtest_mape": 1.103,
