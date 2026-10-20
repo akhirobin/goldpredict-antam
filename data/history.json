@@ -106,5 +106,17 @@
     "direction": "SIDEWAYS",
     "confidence_pct": 50.0,
     "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature"
+  },
+  {
+    "updated_at": "2026-10-20T13:40:57+07:00",
+    "official_recorded_date": "2026-10-20",
+    "antam_sell_1g": 2564000,
+    "brankas_sell_1g": 2564000,
+    "predicted_antam_1g": 2568000,
+    "prediction_low": 2530000,
+    "prediction_high": 2606000,
+    "direction": "SIDEWAYS",
+    "confidence_pct": 50.0,
+    "model": "Ensemble ExtraTrees + RandomForest + GradientBoosting + BRANKAS feature"
   }
 ]
