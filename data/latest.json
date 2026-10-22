@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T13:38:38+07:00",
+  "updated_at": "2026-10-22T15:50:42+07:00",
   "official_recorded_date": "2026-10-22",
   "source_name": "Logam Mulia (via public bridge)",
   "source_url": "https://www.logammulia.com/id/harga-emas-hari-ini",
@@ -96,9 +96,9 @@
       "materialType": "Emas Batangan"
     }
   ],
-  "predicted_antam_1g": 2557000,
-  "prediction_low": 2515000,
-  "prediction_high": 2599000,
+  "predicted_antam_1g": 2556000,
+  "prediction_low": 2514000,
+  "prediction_high": 2598000,
   "direction": "SIDEWAYS",
   "confidence_pct": 50.0,
   "backtest_direction_accuracy": 42.9,
